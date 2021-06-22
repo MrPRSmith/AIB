@@ -1,0 +1,87 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "AzureImageBuilderTemplateName": {
+            "value": "MyFirstAIBTemplate-Example1"
+        },
+        "api-version": {
+            "value": "2020-02-14"
+        },
+        "AzureImageBuilderSvcLocation": {
+            "value": "NorthEurope"
+        },
+        "Subscription": {
+            "value": "Your Azure Subscription ID"
+        },
+        "AzureFilesUNCPath": {
+            "value": "UNC Path to Azure Files. Remember to escape backslash characters"
+        },
+        "AzureFilesDriveMapUsername": {
+            "value": "Azure Files User Name. Remember to escape backslash characters"
+        },
+        "AzureFilesDriveMapPassword": {
+            "value": "Azure Files Password"
+        },
+        "ImageBuildScript1": {
+            "value": "Script1.ps1"
+        },
+        "ImageBuildScript2": {
+            "value": ""
+        },
+        "ManagedImageOutputResourceGroupName": {
+            "value": "The RG of where to save a Managed Image"
+        },
+        "ManagedImageOutputNamePrefix": {
+            "value": "WVD-WIN10-2004-MS"
+        },
+        "sharedImageGalleryName": {
+            "value": ""
+        },
+        "SharedImageGalleryResourceGroupName": {
+            "value": ""
+        },
+        "SharedImageGalleryReplicationRegions": {
+            "value": ["NorthEurope"]
+        },        
+        "SharedImageGalleryImageDefName": {
+            "value": ""
+        },
+        "AzureImageBuilderIdentity": {
+            "value": "Name of the Azure Image Builder Identity"
+        },
+        "AzureImageBuilderVmSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "AzureImageBuilderVmosDiskSizeGB": {
+            "value": 127
+        },
+        "AzureImageBuilderVmImagePublisher": {
+            "value": "MicrosoftWindowsDesktop"
+        },        
+        "AzureImageBuilderVmImageOffer": {
+            "value": "windows-10"
+        },
+        "AzureImageBuilderVmImageSKU": {
+            "value": "20h1-evd"
+        },
+        "AzureImageBuilderVmbuildTimeoutInMinutes": {
+            "value": 120
+        },
+        "AzureImageBuilderVmPerformWindowsUpdate": {
+            "value": true
+        },
+        "AzureImageBuilderVmSubnetName": {
+            "value": ""
+        },
+        "AzureImageBuilderVmVnetName": {
+            "value": ""
+        },
+        "AzureImageBuilderVmVnetResourceGroup": {
+            "value": ""
+        },
+        "DistributeMethod": {
+            "value": "ManagedImage"
+        }
+    }
+}
